@@ -1,0 +1,13 @@
+ObjectType = Image
+NDims = 3
+BinaryData = True
+BinaryDataByteOrderMSB = False
+CompressedData = False
+TransformMatrix = 1 0 0 0 1 0 0 0 1
+Offset = 32.90625 7.0199999999999996 -23.172779506439582
+CenterOfRotation = 0 0 0
+AnatomicalOrientation = RAI
+ElementSpacing = 0.14624999999999999 0.14624999999999999 0.14624999999999999
+DimSize = 762 140 177
+ElementType = MET_USHORT
+ElementDataFile = head_view1_cropped.raw
