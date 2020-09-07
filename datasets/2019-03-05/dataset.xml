@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SpimData version="0.2">
+  <BasePath type="relative">.</BasePath>
+  <SequenceDescription>
+    <ImageLoader format="bdv.hdf5">
+      <hdf5 type="relative">dataset.h5</hdf5>
+    </ImageLoader>
+    <ViewSetups>
+      <ViewSetup>
+        <id>0</id>
+        <name>0</name>
+        <size>893 220 80</size>
+        <voxelSize>
+          <unit>µm</unit>
+          <size>0.1462500179156272 0.1462500179156272 1.1115</size>
+        </voxelSize>
+        <attributes>
+          <illumination>0</illumination>
+          <channel>0</channel>
+          <tile>0</tile>
+          <angle>0</angle>
+        </attributes>
+      </ViewSetup>
+      <ViewSetup>
+        <id>1</id>
+        <name>1</name>
+        <size>836 316 80</size>
+        <voxelSize>
+          <unit>µm</unit>
+          <size>0.1462500179156272 0.1462500179156272 1.111</size>
+        </voxelSize>
+        <attributes>
+          <illumination>0</illumination>
+          <channel>0</channel>
+          <tile>0</tile>
+          <angle>1</angle>
+        </attributes>
+      </ViewSetup>
+      <Attributes name="illumination">
+        <Illumination>
+          <id>0</id>
+          <name>0</name>
+        </Illumination>
+      </Attributes>
+      <Attributes name="channel">
+        <Channel>
+          <id>0</id>
+          <name>0</name>
+        </Channel>
+      </Attributes>
+      <Attributes name="tile">
+        <Tile>
+          <id>0</id>
+          <name>0</name>
+        </Tile>
+      </Attributes>
+      <Attributes name="angle">
+        <Angle>
+          <id>0</id>
+          <name>0</name>
+        </Angle>
+        <Angle>
+          <id>1</id>
+          <name>1</name>
+        </Angle>
+      </Attributes>
+    </ViewSetups>
+    <Timepoints type="pattern">
+      <integerpattern>0</integerpattern>
+    </Timepoints>
+    <MissingViews />
+  </SequenceDescription>
+  <ViewRegistrations>
+    <ViewRegistration timepoint="0" setup="0">
+      <ViewTransform type="affine">
+        <Name>AffineModel3D regularized with an RigidModel3D, lambda = 0.1</Name>
+        <affine>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0</affine>
+      </ViewTransform>
+      <ViewTransform type="affine">
+        <Name>AffineModel3D regularized with an RigidModel3D, lambda = 0.1</Name>
+        <affine>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0</affine>
+      </ViewTransform>
+      <ViewTransform type="affine">
+        <Name>AffineModel3D regularized with an RigidModel3D, lambda = 0.1</Name>
+        <affine>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0</affine>
+      </ViewTransform>
+      <ViewTransform type="affine">
+        <Name>RigidModel3D regularized with an AffineModel3D, lambda = 0.1</Name>
+        <affine>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0</affine>
+      </ViewTransform>
+      <ViewTransform type="affine">
+        <Name>AffineModel3D regularized with an AffineModel3D, lambda = 0.1</Name>
+        <affine>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0</affine>
+      </ViewTransform>
+      <ViewTransform type="affine">
+        <Name>AffineModel3D regularized with an RigidModel3D, lambda = 0.1</Name>
+        <affine>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0</affine>
+      </ViewTransform>
+      <ViewTransform type="affine">
+        <Name>TranslationModel3D</Name>
+        <affine>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0</affine>
+      </ViewTransform>
+      <ViewTransform type="affine">
+        <Name>calibration</Name>
+        <affine>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 7.6 0.0</affine>
+      </ViewTransform>
+    </ViewRegistration>
+    <ViewRegistration timepoint="0" setup="1">
+      <ViewTransform type="affine">
+        <Name>AffineModel3D regularized with an RigidModel3D, lambda = 0.1</Name>
+        <affine>0.9792586795484854 0.005064763722647538 0.016752889576507245 2.5482666031633654 -0.01281431674341654 0.9964012196933271 0.014099720336772365 0.7832046114297218 -0.024465670446081313 0.00251789353022174 1.0231433691386211 1.9734100419553868</affine>
+      </ViewTransform>
+      <ViewTransform type="affine">
+        <Name>AffineModel3D regularized with an RigidModel3D, lambda = 0.1</Name>
+        <affine>0.805301661097356 0.10981655422223258 0.17088539984347328 1.8774614464742565 -0.07036240146903192 1.028325429683427 0.06327274739414612 2.927856271943013 -0.12207988959268913 0.010846331671541486 1.1057880056754177 8.417434190097355</affine>
+      </ViewTransform>
+      <ViewTransform type="affine">
+        <Name>AffineModel3D regularized with an RigidModel3D, lambda = 0.1</Name>
+        <affine>0.920575768498362 -0.07988641789026588 0.07362863176901895 15.589686954081042 -0.032949707967926296 0.9771298245404513 0.03265004243003131 4.970744391811744 -0.07419997329548836 -0.06722366002915853 1.0684724231552187 13.456026067748699</affine>
+      </ViewTransform>
+      <ViewTransform type="affine">
+        <Name>RigidModel3D regularized with an AffineModel3D, lambda = 0.1</Name>
+        <affine>0.9934449331814054 -0.04295966782359765 0.007432963418088883 3.103922186987024 0.039104707593670976 0.9984866526428566 -0.031897374673821165 -5.126803054824764 -0.007861141988376086 0.030315380656341227 1.0063596958281575 -3.992675491162175</affine>
+      </ViewTransform>
+      <ViewTransform type="affine">
+        <Name>AffineModel3D regularized with an AffineModel3D, lambda = 0.1</Name>
+        <affine>0.9969140449711524 0.011607772536823546 0.014246674688973116 -5.107135365743609 -0.02613801080374345 1.076591174740572 0.026926327542822426 -8.592351611415893 -0.04009595676621913 -0.04388183219004116 1.0490969283151728 2.925230639081974</affine>
+      </ViewTransform>
+      <ViewTransform type="affine">
+        <Name>AffineModel3D regularized with an RigidModel3D, lambda = 0.1</Name>
+        <affine>1.086754480018578 -0.07696350191260684 -0.06713736422168941 -7.26537248609923 0.08454160017421597 0.8624184134199685 -0.07962170670046487 -4.763311731222015 0.03550588837829501 0.05179232528052155 0.9726721562002273 -12.932083700919122</affine>
+      </ViewTransform>
+      <ViewTransform type="affine">
+        <Name>TranslationModel3D</Name>
+        <affine>1.0 0.0 0.0 57.10540735511432 0.0 1.0 0.0 282.0308719681389 0.0 0.0 1.0 727.0237389422477</affine>
+      </ViewTransform>
+      <ViewTransform type="affine">
+        <Name>Manually defined transformation (Rotation around y-axis by 90.0 degrees)</Name>
+        <affine>6.123233995736766E-17 0.0 1.0 0.0 0.0 1.0 0.0 0.0 -1.0 0.0 6.123233995736766E-17 0.0</affine>
+      </ViewTransform>
+      <ViewTransform type="affine">
+        <Name>Manually defined transformation (Rigid/Affine by matrix)</Name>
+        <affine>1.0 0.0 0.0 0.0 0.0 -1.0 0.0 0.0 0.0 0.0 1.0 0.0</affine>
+      </ViewTransform>
+      <ViewTransform type="affine">
+        <Name>calibration</Name>
+        <affine>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 7.6 0.0</affine>
+      </ViewTransform>
+    </ViewRegistration>
+  </ViewRegistrations>
+  <ViewInterestPoints>
+    <ViewInterestPointsFile timepoint="0" setup="0" label="cells2" params="DOG s=1.2125000953674316 t=0.02565118484199047 min=false max=true imageSigmaX=0.5 imageSigmaY=0.5 imageSigmaZ=0.5 downsampleXYIndex=0 downsampleZ=1 minIntensity=NaN maxIntensity=NaN">interestpoints/tpId_0_viewSetupId_0.cells2</ViewInterestPointsFile>
+    <ViewInterestPointsFile timepoint="0" setup="0" label="cells3" params="DOG s=1.8014999628067017 t=0.0358336977660656 min=false max=true imageSigmaX=0.5 imageSigmaY=0.5 imageSigmaZ=0.5 downsampleXYIndex=0 downsampleZ=1 minIntensity=NaN maxIntensity=NaN">interestpoints/tpId_0_viewSetupId_0.cells3</ViewInterestPointsFile>
+    <ViewInterestPointsFile timepoint="0" setup="1" label="cells2" params="DOG s=1.2125000953674316 t=0.02565118484199047 min=false max=true imageSigmaX=0.5 imageSigmaY=0.5 imageSigmaZ=0.5 downsampleXYIndex=0 downsampleZ=1 minIntensity=NaN maxIntensity=NaN">interestpoints/tpId_0_viewSetupId_1.cells2</ViewInterestPointsFile>
+    <ViewInterestPointsFile timepoint="0" setup="1" label="cells3" params="DOG s=1.8014999628067017 t=0.0358336977660656 min=false max=true imageSigmaX=0.5 imageSigmaY=0.5 imageSigmaZ=0.5 downsampleXYIndex=0 downsampleZ=1 minIntensity=NaN maxIntensity=NaN">interestpoints/tpId_0_viewSetupId_1.cells3</ViewInterestPointsFile>
+  </ViewInterestPoints>
+  <BoundingBoxes>
+    <BoundingBoxDefinition name="My Bounding Box">
+      <min>112 6 42</min>
+      <max>806 197 717</max>
+    </BoundingBoxDefinition>
+  </BoundingBoxes>
+  <PointSpreadFunctions>
+    <BoundingBoxDefinition timepoint="0" setup="0">
+      <File>psf_t0_v0.tif</File>
+    </BoundingBoxDefinition>
+    <BoundingBoxDefinition timepoint="0" setup="1">
+      <File>psf_t0_v1.tif</File>
+    </BoundingBoxDefinition>
+  </PointSpreadFunctions>
+  <StitchingResults />
+  <IntensityAdjustments />
+</SpimData>

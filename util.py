@@ -322,8 +322,8 @@ def merge_images_rgb(image_fixed, image_moving):
     img_merge_rgb.SetSpacing(image_fixed.GetSpacing())
     return img_merge_rgb
 
-
-def get_center(image, method='geometry'):
+      
+def get_center(image, method='geometry', bg_percentile=99):
     """Set the sitk Image origin to it's geometric or center of mass center
     Parameters
         image: sitk Image
@@ -331,6 +331,8 @@ def get_center(image, method='geometry'):
         method: str
             'geometry' (default), use the geometrical center of input image as new origin
             'mass', use center-of-mass method
+        bg_percentile: float
+            if method='mass', use this number to determine image background threshold (0 to 100)
     Returns
         None, the input image is changed by reference.
     """
@@ -340,9 +342,11 @@ def get_center(image, method='geometry'):
         return new_origin
     elif method == 'mass':
         im_array = sitk.GetArrayFromImage(image)
-        cmass_xyz = list(ndimage.measurements.center_of_mass(im_array))
+        bg = np.percentile(im_array, bg_percentile)
+        mask = im_array > bg
+        cmass_xyz = list(ndimage.measurements.center_of_mass(mask))
         cmass_xyz.reverse()
-        new_origin = np.array(spacing_xyz) * np.array(cmass_xyz)
+        new_origin = np.array(spacing_xyz) * (np.array(cmass_xyz) + 0.5)
         return new_origin
     else:
         raise ValueError('Recentering method is unknown.')
