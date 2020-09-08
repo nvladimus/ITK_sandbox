@@ -29,8 +29,7 @@ def downsample(image, factor=2):
     old_spacing = np.array(image.GetSpacing())
     new_spacing = (old_spacing * factor).tolist()
     default_value = 0
-    resampleSliceFilter = sitk.ResampleImageFilter()
-    new_image = resampleSliceFilter.Execute(image, new_size, sitk.Transform(),
+    new_image = sitk.Resample(image, new_size, sitk.Transform(),
                                                 sitk.sitkLinear, image.GetOrigin(),
                                                 new_spacing, image.GetDirection(),
                                                 default_value, image.GetPixelID())
@@ -61,8 +60,7 @@ def resample_isotropic(image, default_val=0, interpolator=sitk.sitkLinear):
     new_spacing = [min_spacing] * image.GetDimension()
     new_size = np.asarray(original_size) * np.asarray(original_spacing) / min_spacing
     new_size = np.round(new_size).astype(int).tolist()
-    resampleSliceFilter = sitk.ResampleImageFilter()
-    img_resampled = resampleSliceFilter.Execute(image, new_size, sitk.Transform(),
+    img_resampled = sitk.Resample(image, new_size, sitk.Transform(),
                                                 interpolator, image.GetOrigin(),
                                                 new_spacing, image.GetDirection(),
                                                 default_val, image.GetPixelID())
